@@ -1,4 +1,22 @@
 import { useState, useEffect, useRef, useMemo, type ReactNode } from "react";
+import pic1 from './assets/images/pic1.jpg';
+import pic3 from './assets/images/pic3.png';
+import pic4 from './assets/images/pic4.jfif';
+import pic5 from './assets/images/pic5.jpg';
+import pic6 from './assets/images/pic6.jpg';
+import pic8 from './assets/images/pic8.jpg';
+import pic9 from './assets/images/pic9.jpg';
+import pic11 from './assets/images/pic11.jpg';
+import pic12 from './assets/images/pic12.jpg';
+import pic14 from './assets/images/pic14.jpg';
+import pic15 from './assets/images/pic15.jpg';
+import pic16 from './assets/images/pic16.jpg';
+
+
+
+
+
+
 
 // ─── Design tokens ────────────────────────────────────────────────────────────
 const PINK = "#F58CA8";
@@ -206,7 +224,7 @@ function HeroSection() {
           }}
         >
           <img
-            src="/images/pic1.jpg"
+            src={pic1}
             alt="Xinh lắm luôn"
             className="w-full h-52 object-cover"
             style={{ borderRadius: "1px" }}
@@ -255,35 +273,35 @@ const TIMELINE = [
     title: "Lần đầu nhắn tin",
     desc: "Ngây ngô lắm. Giờ a đọc lại tin còn thấy anh ngốc kinh. Haha",
     emoji: "🌟",
-    img: "/images/pic3.png",
+    img: pic3,
   },
   {
     date: "30/12/2025",
     title: "Lần đầu gặp nhau",
     desc: "Khoảnh khắc anh biết em là người đặc biệt. Một cái nhìn thôi là đủ rồi.",
     emoji: "🌟",
-    img: "/images/pic4.jfif",
+    img: pic4,
   },
   {
     date: "18/7/2026",
     title: "Ngày ta nói lời yêu",
     desc: "Hồi hộp mà vui lắm. Cái buổi tối ngồi nói chuyện mãi không dứt đó. Coffee Gió",
     emoji: "☕",
-    img: "/images/pic6.jpg",
+    img: pic6,
   },
   {
     date: "Một ngày nữa yêu nhau",
     title: "Nắm tay anh nhé",
     desc: "Muốn nắm tay thế này mãi cơ bé yêu à",
     emoji: "😊",
-    img: "/images/pic8.jpg",
+    img: pic8,
   },
   {
     date: "Một dịp nào đó",
     title: "Chuyến đi đầu tiên cùng nhau",
     desc: "Anh muốn lúc nào đi đây đó cùng em.",
     emoji: "✈️",
-    img: "/images/pic5.jpg",
+    img: pic5,
   },
 
   {
@@ -291,7 +309,7 @@ const TIMELINE = [
     title: "Chúc em sinh nhật vui vẻ 🎂",
     desc: "Và đây là một trong những ngày anh thích nhất. Happy Birthday, my love.",
     emoji: "🎂",
-    img: "/images/pic9.jpg",
+    img: pic9,
   },
 ];
 
@@ -387,32 +405,32 @@ function OurStorySection() {
 // ══════════════════════════════════════════════════════════════════════════════
 const PHOTOS = [
   {
-    src: "/images/pic5.jpg",
+    src: pic5,
     caption: "Ai xinh thế nhỉ ❤️",
     rotation: -3,
   },
   {
-    src: "/images/pic16.jpg",
+    src: pic16,
     caption: "Em vẫn luôn xinh như vậy.",
     rotation: 2.5,
   },
   {
-    src: "/images/pic11.jpg",
+    src: pic11,
     caption: "Trông cute thế nhỉ.",
     rotation: -1.5,
   },
   {
-    src: "/images/pic12.jpg",
+    src: pic12,
     caption: "Thêm thật nhiều chuyến đi như thế này nhé.",
     rotation: 3,
   },
   {
-    src: "/images/pic14.jpg",
+    src: pic14,
     caption: "Anh vẫn để ảnh đại diện nha.",
     rotation: -2,
   },
   {
-    src: "/images/pic15.jpg",
+    src: pic15,
     caption: "Cảm ơn em đã ở đây 💕",
     rotation: 1.5,
   },
