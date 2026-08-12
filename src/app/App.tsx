@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef, useMemo, type ReactNode } from "react";
-import pic1 from './assets/images/pic1.jpg';
-import pic3 from './assets/images/pic3.png';
-import pic4 from './assets/images/pic4.jfif';
-import pic5 from './assets/images/pic5.jpg';
-import pic6 from './assets/images/pic6.jpg';
-import pic8 from './assets/images/pic8.jpg';
-import pic9 from './assets/images/pic9.jpg';
-import pic11 from './assets/images/pic11.jpg';
-import pic12 from './assets/images/pic12.jpg';
-import pic14 from './assets/images/pic14.jpg';
-import pic15 from './assets/images/pic15.jpg';
-import pic16 from './assets/images/pic16.jpg';
+import pic1 from '../assets/images/pic1.jpg';
+import pic3 from '../assets/images/pic3.png';
+import pic4 from '../assets/images/pic4.jfif';
+import pic5 from '../assets/images/pic5.jpg';
+import pic6 from '../assets/images/pic6.jpg';
+import pic8 from '../assets/images/pic8.jpg';
+import pic9 from '../assets/images/pic9.jpg';
+import pic11 from '../assets/images/pic11.jpg';
+import pic12 from '../assets/images/pic12.jpg';
+import pic14 from '../assets/images/pic14.jpg';
+import pic15 from '../assets/images/pic15.jpg';
+import pic16 from '../assets/images/pic16.jpg';
 
 
 
