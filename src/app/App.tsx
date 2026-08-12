@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo, type ReactNode } from "react";
+import myLoveSong from '../assets/audio/my-love.mp3';
 import pic1 from '../assets/images/pic1.jpg';
 import pic3 from '../assets/images/pic3.png';
 import pic4 from '../assets/images/pic4.jfif';
@@ -1061,6 +1062,22 @@ function FinalSection() {
 // ══════════════════════════════════════════════════════════════════════════════
 function MusicPlayer() {
   const [playing, setPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const toggleMusic = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (audio.paused) {
+      try {
+        await audio.play();
+      } catch {
+        setPlaying(false);
+      }
+    } else {
+      audio.pause();
+    }
+  };
 
   return (
     <div
@@ -1072,6 +1089,14 @@ function MusicPlayer() {
         boxShadow: "0 8px 36px rgba(245,140,168,0.2)",
       }}
     >
+      <audio
+        ref={audioRef}
+        src={myLoveSong}
+        preload="metadata"
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+      />
       <span
         style={{
           fontSize: 18,
@@ -1096,7 +1121,7 @@ function MusicPlayer() {
         </p>
       </div>
       <button
-        onClick={() => setPlaying((p) => !p)}
+        onClick={toggleMusic}
         className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 transition-transform hover:scale-110 active:scale-90"
         style={{ background: `linear-gradient(135deg, ${PINK}, #FF6B9D)` }}
         aria-label={playing ? "Pause" : "Play"}
