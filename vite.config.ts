@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react()],
   // Chỉ cần thêm dòng base này vào, thay bằng tên repository thực tế của bạn
-  base: '/ten-repo-cua-ban/', 
+  base: '/webtrungdaotangnhunghenry/', 
 })
