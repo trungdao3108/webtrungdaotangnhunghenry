@@ -12,6 +12,8 @@ import pic12 from '../assets/images/pic12.jpg';
 import pic14 from '../assets/images/pic14.jpg';
 import pic15 from '../assets/images/pic15.jpg';
 import pic16 from '../assets/images/pic16.jpg';
+import pic17 from '../assets/images/pic_17.jpg';
+import pic18 from '../assets/images/pic18.jpg';
 
 
 
@@ -522,7 +524,7 @@ const LOVE_REASONS = [
   { icon: "❤️", title: "Nụ cười của em", desc: "Mỗi lần thấy em cười là anh vui lây mà không biết tại sao." },
   { icon: "✨", title: "Cách em quan tâm mọi người", desc: "Em luôn chú ý đến từng người một — điều đó làm anh ngưỡng mộ lắm." },
   { icon: "🌷", title: "Sự dịu dàng của em", desc: "Em nhẹ nhàng và ấm áp theo cách riêng mà chẳng ai có được." },
-  { icon: "😂", title: "Những lúc em cười thật lớn", desc: "Cái kiểu cười không kìm được đó — anh thấy đó là em thật nhất." },
+  { icon: "😂", title: "Anh thích vuốt tóc mai em", desc: "Vì lúc đấy anh được ngắm em rõ nhất. Anh sẽ luôn kẹp tóc cho em nha" },
   { icon: "🤍", title: "Cách em luôn ở bên anh", desc: "Dù là lúc vui hay buồn, em vẫn ở đó. Điều đó có nghĩa rất nhiều với anh." },
   { icon: "💫", title: "Đơn giản là vì em là em", desc: "Không cần lý do gì thêm. Em là em, và đó là điều anh yêu nhất." },
 ];
@@ -628,11 +630,11 @@ function LoveLetterSection() {
             </p>
             <p>
               Cảm ơn em vì đã xuất hiện, vì những câu chuyện rất bình thường, những lần cùng nhau đi
-              đâu đó, những lúc vui và cả những lúc chẳng vui chút nào.
+              đâu đó, những lúc vui và buồn, sau tất cả anh lại càng muốn gần em hơn.
             </p>
             <p>
               Anh mong tuổi mới sẽ mang đến cho em thật nhiều niềm vui, sức khỏe, may mắn và những
-              điều em đang mong chờ.
+              điều em đang mong chờ. Chúc em sẽ thành công trong sự nghiệp giáo viên của mình.
             </p>
             <p>
               Và anh hy vọng mình vẫn sẽ được ở bên cạnh để cùng em tạo thêm thật nhiều kỷ niệm mới.
@@ -644,7 +646,7 @@ function LoveLetterSection() {
 
           <div className="mt-8 pt-6" style={{ borderTop: `1px dashed ${SOFT_PINK}` }}>
             <p className="text-sm mb-1" style={{ color: MID, fontFamily: "'Nunito', sans-serif" }}>
-              Mãi mãi,
+              Phương Nhung,
             </p>
             <p style={{ fontFamily: "'Great Vibes', cursive", color: PINK, fontSize: "38px" }}>
               Love you, always. 💕
@@ -1020,7 +1022,7 @@ function FinalSection() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1601658129158-02ae71e5fbd3?w=500&h=380&fit=crop&auto=format"
+              src={pic18}
               alt="Mãi bên nhau"
               className="w-full h-52 object-cover"
               style={{ borderRadius: "1px", background: SOFT_PINK }}
